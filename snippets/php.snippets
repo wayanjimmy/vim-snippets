@@ -1,28 +1,3 @@
-snippet <?
-	<?php
-
-	${0}
-snippet dst "declare(strict_types=1)"
-	declare(strict_types=${1:1});
-snippet ec
-	echo ${0};
-snippet <?e
-	<?php echo ${0} ?>
-# this one is for php5.4
-snippet <?=
-	<?=${0}?>
-snippet ?=
-	<?= ${0} ?>
-snippet ?
-	<?php ${0} ?>
-snippet ?f
-	<?php foreach ($${1:vars} as $${2:$var}): ?>
-		${0}
-	<?php endforeach ?>
-snippet ?i
-	<?php if ($${1:var}): ?>
-		${0}
-	<?php endif ?>
 snippet ns
 	namespace ${1:Foo\Bar\Baz};
 	${0}
@@ -54,6 +29,12 @@ snippet pmet
 	{
 		${0}
 	}
+snippet tmet
+    /** @test */
+	public function ${1:foo}()
+    {
+		${0}
+    }
 snippet sm "PHP Class Setter"
 	/**
 	 * Sets the value of ${1:foo}
